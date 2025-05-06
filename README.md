@@ -1,5 +1,5 @@
 # Figments
-## The free hosting service I'm using is https://render.com/
-## To use it create a new Webservice attach to a git repository (you should definitely make it a private one because you need to actually enter the API Keys into app.py and put it up there).
-## Select the closest region and in "Build Command" enter this: pip install -r requirements.txt
-## and in "Start Command" enter this: python app.py
+### The free hosting service I'm using is https://render.com/
+### To use it create a new Webservice attach to a git repository (you should definitely make it a private one because you need to actually enter the API Keys into app.py and put it up there).
+### Select the closest region and in "Build Command" enter this: pip install -r requirements.txt
+### and in "Start Command" enter this: python app.py
