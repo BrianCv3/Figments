@@ -3,4 +3,4 @@
 ### To use it create a new Webservice attach to a git repository (you should definitely make it a private one because you need to actually enter the API Keys into app.py and put it up there). 
 ### Select the closest region to you
 ### In "Build Command" enter this: pip install -r requirements.txt 
-### "Start Command" enter this: python app.py
+### In "Start Command" enter this: python app.py
