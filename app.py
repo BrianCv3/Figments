@@ -36,9 +36,16 @@ class MyBot(Client):
             system_instruction="Put some instructions for your bot here. As in prompts to tell youe bot about themselves, how to speak, etc. Things you would put in Pesonality, Free Will, AI Engine and Knowledge."), 
             contents=message.content
         )
-        reply = response.text
-        await message.channel.send(reply)
-        #sends a response in the channel, doesn't reply directly to the person messaging them yet.
+        if "<@botid>" in message.content or ":emojiid:" in message.content or "botname" in message.content or "Botname" in message.content or "botid" in message.raw_mentions:
+            reply = response.text
+            await message.reply(reply,mention=True)
+            #Fill the message content stuff in (there's 2 botnames because one has the name in lowercase and the other with the first letter capiralized). 
+            #This is a list of what will cause the bot to reply in this if statement:
+            #1 - If you mention/ping the bot in chat. 
+            #2 - If you use a specfic emoji.
+            #3 - If you say the bot's name in all lowecase.
+            #4 - If you say the bot's name with the first letter capitalized.
+            #5 - if you reply to one of the bot's messages.
 
 async def main():
     async with aiohttp.ClientSession() as session:
